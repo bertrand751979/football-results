@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+<com.google.android.material.card.MaterialCardView
+    android:layout_width="210dp"
+    android:layout_height="220dp"
+    app:strokeColor="@color/black"
+    android:padding="20dp"
+    app:strokeWidth="5dp"
+    app:cardCornerRadius="11dp">
+
+    <EditText
+        android:id="@+id/groupName"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Titre du Grouoe 1"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/counrty1"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saisissez le pays 1"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/counrty2"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_height="wrap_content"
+        android:text="Saisissez le pays 2"
+        android:layout_marginTop="60dp" />
+
+    <EditText
+        android:id="@+id/counrty3"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saisissez le pays 3"
+        android:layout_marginTop="90dp" />
+
+    <EditText
+        android:id="@+id/counrty4"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Saisissez le pays 4"
+        android:layout_marginTop="120dp"/>
+
+    <Button
+        android:id="@+id/btnValider"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sauvegarder"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="10dp"/>
+</com.google.android.material.card.MaterialCardView>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="240dp"
+        android:layout_width="210dp"
+        android:layout_height="220dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="5dp"
+        app:cardCornerRadius="11dp">
+        <EditText
+            android:id="@+id/groupNameGroupTwo"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Titre du Grouoe 2"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/counrty1GroupTwo"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 1"
+            android:singleLine="true"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/counrty2GroupTwo"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 2"
+            android:layout_marginTop="60dp" />
+
+        <EditText
+            android:id="@+id/counrty3GroupTwo"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 3"
+            android:layout_marginTop="90dp" />
+
+        <EditText
+            android:id="@+id/counrtyGroupTwo"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 4"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:id="@+id/btnValiderGroupTwo"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="10dp"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="480dp"
+        android:layout_width="210dp"
+        android:layout_height="220dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="5dp"
+        app:cardCornerRadius="11dp">
+        <EditText
+            android:id="@+id/groupNameGroupThree"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Titre du Grouoe 3"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/counrty1GroupThree"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 1"
+            android:singleLine="true"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/counrty2GroupThree"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 2"
+            android:layout_marginTop="60dp" />
+
+        <EditText
+            android:id="@+id/counrty3GroupThree"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 3"
+            android:layout_marginTop="90dp" />
+
+        <EditText
+            android:id="@+id/counrtyGroupThree"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 4"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:id="@+id/btnValiderGroupThree"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="10dp"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="710dp"
+        android:layout_width="210dp"
+        android:layout_height="220dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="5dp"
+        app:cardCornerRadius="11dp">
+        <EditText
+            android:id="@+id/groupNameGroupFour"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Titre du Grouoe 4"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/counrty1GroupFour"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 1"
+            android:singleLine="true"
+            android:layout_marginTop="30dp"/>
+
+        <EditText
+            android:id="@+id/counrty2GroupFour"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 2"
+            android:layout_marginTop="60dp" />
+
+        <EditText
+            android:id="@+id/counrty3GroupFour"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 3"
+            android:layout_marginTop="90dp" />
+
+        <EditText
+            android:id="@+id/counrtyGroupFour4"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Saisissez le pays 4"
+            android:layout_marginTop="120dp"/>
+
+        <Button
+            android:id="@+id/btnValiderGroupFour"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sauvegarder"
+            android:layout_marginTop="160dp"
+            android:layout_marginBottom="10dp"/>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
