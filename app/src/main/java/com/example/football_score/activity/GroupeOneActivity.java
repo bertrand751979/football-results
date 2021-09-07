@@ -25,7 +25,7 @@ public class GroupeOneActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);;
         setContentView(R.layout.activity_inscription);
         nameOfGroup=findViewById(R.id.groupName);
         team1=findViewById(R.id.counrty1);
