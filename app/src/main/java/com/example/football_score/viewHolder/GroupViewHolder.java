@@ -18,7 +18,6 @@ public class GroupViewHolder extends RecyclerView.ViewHolder {
     private TextView vhCountryTwo;
     private TextView vhCountryThree;
     private TextView vhCountryFour;
-    private Button btnValidez;
 
     public GroupViewHolder(@NonNull View view) {
         super(view);
@@ -27,7 +26,6 @@ public class GroupViewHolder extends RecyclerView.ViewHolder {
         vhCountryTwo=view.findViewById(R.id.raw_countryTwo);
         vhCountryThree=view.findViewById(R.id.raw_countryThree);
         vhCountryFour=view.findViewById(R.id.raw_countryFour);
-        btnValidez=view.findViewById(R.id.btnValider);
     }
 
     public TextView getVhGroupTitle() {
@@ -70,26 +68,15 @@ public class GroupViewHolder extends RecyclerView.ViewHolder {
         this.vhCountryFour = vhCountryFour;
     }
 
-    public Button getBtnValidez() {
-        return btnValidez;
-    }
 
-    public void setBtnValidez(Button btnValidez) {
-        this.btnValidez = btnValidez;
-    }
 
-    public void bind(Group group, OnButtonValidActionGroup1 onButtonValidActionGroup1){
+    public void bind(Group group){
         vhGroupTitle.setText(group.getNameOfGroup());
         vhCountryOne.setText(group.getCountryOneName());
         vhCountryTwo.setText(group.getCountryTwoName());
         vhCountryThree.setText(group.getCountryThreeName());
         vhCountryFour.setText(group.getCountryFourName());
-        btnValidez.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onButtonValidActionGroup1.group1Save(group);
-            }
-        });
+
     }
 
 }

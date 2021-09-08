@@ -8,19 +8,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.football_score.viewHolder.Group4ViewHolder;
-import com.example.football_score.OnButtonActionValidGroup4;
 import com.example.football_score.R;
 import com.example.football_score.model.Group;
 
 import java.util.ArrayList;
-
+/*
 public class Group4Adapter extends RecyclerView.Adapter<Group4ViewHolder> {
-    private ArrayList<Group> listGroup4Adapter;
-    private OnButtonActionValidGroup4 onButtonActionValidGroup4;
+   private ArrayList<Group> listGroup4Adapter;
 
-    public Group4Adapter(ArrayList<Group> listGroup4Adapter, OnButtonActionValidGroup4 onButtonActionValidGroup4) {
+
+    public Group4Adapter(ArrayList<Group> listGroup4Adapter) {
         this.listGroup4Adapter = listGroup4Adapter;
-        this.onButtonActionValidGroup4 = onButtonActionValidGroup4;
     }
 
     public void setListGroup4Adapter(ArrayList<Group> listGroup4Adapter) {
@@ -37,11 +35,13 @@ public class Group4Adapter extends RecyclerView.Adapter<Group4ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull Group4ViewHolder holder, int position) {
-        holder.bind(listGroup4Adapter.get(position),onButtonActionValidGroup4);
+        holder.bind(listGroup4Adapter.get(position));
     }
 
     @Override
     public int getItemCount() {
         return listGroup4Adapter.size();
     }
-}
+
+
+}*/

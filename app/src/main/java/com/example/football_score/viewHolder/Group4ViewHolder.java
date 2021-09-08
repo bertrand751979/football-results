@@ -1,13 +1,11 @@
 package com.example.football_score.viewHolder;
 
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.football_score.OnButtonActionValidGroup4;
 import com.example.football_score.R;
 import com.example.football_score.model.Group;
 
@@ -18,7 +16,6 @@ public class Group4ViewHolder extends RecyclerView.ViewHolder {
     private TextView vhCountryTwo;
     private TextView vhCountryThree;
     private TextView vhCountryFour;
-    private Button btnValideG4;
 
     public Group4ViewHolder(@NonNull View view) {
         super(view);
@@ -27,7 +24,6 @@ public class Group4ViewHolder extends RecyclerView.ViewHolder {
         vhCountryTwo=view.findViewById(R.id.raw_countryTwo);
         vhCountryThree=view.findViewById(R.id.raw_countryThree);
         vhCountryFour=view.findViewById(R.id.raw_countryFour);
-        btnValideG4=view.findViewById(R.id.btnValiderGroupFour);
     }
     public TextView getVhGroupTitle() {
         return vhGroup4Title;
@@ -69,17 +65,12 @@ public class Group4ViewHolder extends RecyclerView.ViewHolder {
         this.vhCountryFour = vhCountryFour;
     }
 
-    public void bind(Group group, OnButtonActionValidGroup4 onButtonActionValidGroup4){
+    public void bind(Group group){
         vhGroup4Title.setText(group.getNameOfGroup());
         vhCountryOne.setText(group.getCountryOneName());
         vhCountryTwo.setText(group.getCountryTwoName());
         vhCountryThree.setText(group.getCountryThreeName());
         vhCountryFour.setText(group.getCountryFourName());
-        btnValideG4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onButtonActionValidGroup4.group4Save(group);
-            }
-        });
+
     }
 }

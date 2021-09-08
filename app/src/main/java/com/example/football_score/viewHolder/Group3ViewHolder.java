@@ -1,13 +1,11 @@
 package com.example.football_score.viewHolder;
 
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.football_score.OnButtonActionValidGroup3;
 import com.example.football_score.R;
 import com.example.football_score.model.Group;
 
@@ -17,7 +15,6 @@ public class Group3ViewHolder extends RecyclerView.ViewHolder {
     private TextView vhCountryTwo;
     private TextView vhCountryThree;
     private TextView vhCountryFour;
-    private Button btnValid3;
 
     public Group3ViewHolder(@NonNull View view) {
         super(view);
@@ -26,7 +23,6 @@ public class Group3ViewHolder extends RecyclerView.ViewHolder {
         vhCountryTwo=view.findViewById(R.id.raw_countryTwo);
         vhCountryThree=view.findViewById(R.id.raw_countryThree);
         vhCountryFour=view.findViewById(R.id.raw_countryFour);
-        btnValid3=view.findViewById(R.id.btnValiderGroupThree);
     }
 
     public TextView getVhGroup3Title() {
@@ -69,25 +65,14 @@ public class Group3ViewHolder extends RecyclerView.ViewHolder {
         this.vhCountryFour = vhCountryFour;
     }
 
-    public Button getBtnValid3() {
-        return btnValid3;
-    }
 
-    public void setBtnValid3(Button btnValid3) {
-        this.btnValid3 = btnValid3;
-    }
 
-    public void bind(Group group, OnButtonActionValidGroup3 onButtonActionValidGroup3){
+    public void bind(Group group){
         vhGroup3Title.setText(group.getNameOfGroup());
         vhCountryOne.setText(group.getCountryOneName());
         vhCountryTwo.setText(group.getCountryTwoName());
         vhCountryThree.setText(group.getCountryThreeName());
         vhCountryFour.setText(group.getCountryFourName());
-        btnValid3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onButtonActionValidGroup3.group3Save(group);
-            }
-        });
+
     }
 }

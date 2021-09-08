@@ -1,5 +1,7 @@
 package com.example.football_score.activity;
 
+import static com.example.football_score.activity.MainActivity.MY_GROUP2_KEY;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.football_score.SharedPreferencesManager;
 import com.example.football_score.model.Group;
 import com.example.football_score.R;
 
@@ -26,12 +29,12 @@ public class GroupeTwoActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inscription);
-        nameOfGroup=findViewById(R.id.groupName);
-        team1=findViewById(R.id.counrty1);
-        team2=findViewById(R.id.counrty2);
-        team3=findViewById(R.id.counrty3);
-        team4=findViewById(R.id.counrty4);
-        validez=findViewById(R.id.btnValider);
+        nameOfGroup=findViewById(R.id.groupNameGroupOne);
+        team1=findViewById(R.id.country1G1);
+        team2=findViewById(R.id.country2G1);
+        team3=findViewById(R.id.country3G1);
+        team4=findViewById(R.id.country4G1);
+        validez=findViewById(R.id.btnSaveG1);
         validez.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +71,9 @@ public class GroupeTwoActivity extends AppCompatActivity {
         group.setCountryThreeName(team3.getText().toString());
         group.setCountryFourName(team4.getText().toString());
         myListGroupTwo.add(group);
+        SharedPreferencesManager.getInstance(this).saveGroups(myListGroupTwo,MY_GROUP2_KEY);
+        Toast.makeText(GroupeTwoActivity.this,"La taille est du groupe 2 est: "+myListGroupTwo.size(),Toast.LENGTH_SHORT).show();
+
     }
 
 

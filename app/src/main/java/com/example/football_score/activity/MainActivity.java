@@ -16,7 +16,11 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class MainActivity extends AppCompatActivity {
-    public static String MY_GROUP_KEY="myGroupKey";
+    public static String MY_GROUP1_KEY="myGroup1Keys";
+    public static String MY_GROUP2_KEY="myGroup2Key";
+    public static String MY_GROUP3_KEY="myGroup3Key";
+    public static String MY_GROUP4_KEY="myGroup4Key";
+
     public static String MT_SCORE_KEY="myScoreKey";
     private BottomNavigationView bottomNav;
     private FloatingActionButton fab;

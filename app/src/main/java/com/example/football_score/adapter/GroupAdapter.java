@@ -16,11 +16,9 @@ import java.util.ArrayList;
 
 public class GroupAdapter extends RecyclerView.Adapter<GroupViewHolder> {
 private ArrayList<Group>listGroupAdapter;
-private OnButtonValidActionGroup1 onButtonValidActionGroup1;
 
-    public GroupAdapter(ArrayList<Group> listGroupAdapter, OnButtonValidActionGroup1 onButtonValidActionGroup1) {
+    public GroupAdapter(ArrayList<Group> listGroupAdapter) {
         this.listGroupAdapter = listGroupAdapter;
-        this.onButtonValidActionGroup1 = onButtonValidActionGroup1;
     }
 
     public void setListGroupAdapter(ArrayList<Group> listGroupAdapter) {
@@ -37,7 +35,7 @@ private OnButtonValidActionGroup1 onButtonValidActionGroup1;
 
     @Override
     public void onBindViewHolder(@NonNull GroupViewHolder holder, int position) {
-        holder.bind(listGroupAdapter.get(position),onButtonValidActionGroup1);
+        holder.bind(listGroupAdapter.get(position));
     }
 
     @Override
