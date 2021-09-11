@@ -15,10 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.GroupeOneActivity"/>
-        <activity android:name=".activity.GroupeTwoActivity"/>
-        <activity android:name=".activity.GroupeThreeActivity"/>
-        <activity android:name=".activity.GroupFourActivity"/>
+        <activity android:name=".activity.InscriptionActivity"/>
     </application>
 </manifest>
 

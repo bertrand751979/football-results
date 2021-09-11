@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
-    android:id="@+id/nav_teams"
+
+    <item
+        android:id="@+id/nav_selection"
+        android:icon="@drawable/ic_selected"
+        android:title="Edit Group">
+    </item>
+    <item
+    android:id="@+id/nav_displayTeams"
     android:icon="@drawable/ic_teams"
-    android:title="Groupes">
+    android:title="Display Groups and Teams">
 </item>
     <item
-        android:id="@+id/nav_results"
+        android:id="@+id/nav_showGroups"
+        android:icon="@drawable/ic_baseline_show"
+        android:title="Display Groups and Teams">
+    </item>
+
+    <item
+        android:id="@+id/nav_displayResults"
         android:icon="@drawable/ic_results"
         android:title="Scores">
     </item>

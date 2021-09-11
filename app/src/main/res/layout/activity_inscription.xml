@@ -1,252 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/groupNameGroupOne"
-        android:layout_width="match_parent"
-        android:textSize="10sp"
-        android:textAlignment="center"
-        android:layout_height="wrap_content"
-        android:hint="Titre du Groupe 1"
-        android:singleLine="true"/>
-
-    <EditText
-        android:id="@+id/country1G1"
-        android:textSize="10sp"
-        android:textAlignment="center"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Saisissez le pays 1 du Groupe 1"
-        android:singleLine="true"
-        android:layout_margin="2dp"/>
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="SAISIR UN PAYS"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/country2G1"
-        android:textSize="10sp"
-
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:singleLine="true"
-        android:layout_height="wrap_content"
-        android:hint="Saisissez le pays 2 du Groupe 1"
-        android:layout_margin="2dp" />
-
-    <EditText
-        android:id="@+id/country3G1"
-        android:textSize="10sp"
-
-        android:singleLine="true"
-        android:textAlignment="center"
+        android:id="@+id/editCountry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Saisissez le pays 3 du Groupe 1"
-        android:layout_marginTop="2dp" />
-
-    <EditText
-        android:id="@+id/country4G1"
-        android:textSize="10sp"
-        android:layout_width="match_parent"
-        android:singleLine="true"
-        android:textAlignment="center"
-        android:layout_height="wrap_content"
-        android:hint="Saisissez le pays 4 du Groupe 1"
-        android:layout_marginTop="2dp"/>
+        android:hint="Ecrire ici"
+        android:textColor="#EC0606"
+        android:textSize="15sp"
+        android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnSaveG1"
-        android:singleLine="true"
+        android:id="@+id/btnValidCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        android:hint="Validez Groupe 1"
-        android:layout_marginTop="2dp" />
+        android:layout_marginTop="30dp"
+        android:text="save" />
 
-      <!--  <EditText
-            android:id="@+id/groupNameGroupTwo"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Titre du Groupe 2"
-            android:textSize="10sp"
-            android:singleLine="true"
-            android:layout_marginTop="2dp"
-            android:textAlignment="center" />
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="SAISIR UN NOM DE GROUPE"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/country1G2"
-            android:textSize="10sp"
+            android:id="@+id/editGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:hint="Saisissez le pays 1 du Groupe 2"
-            android:singleLine="true"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/country2G2"
-            android:textSize="10sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 2 du Groupe 2"
-            android:singleLine="true"
-            android:layout_marginTop="2dp"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/country3G2"
-            android:textSize="10sp"
-            android:layout_marginTop="2dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 3 du Groupe 2"
-            android:singleLine="true"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/country4G2"
-            android:textSize="10sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:hint="Saisissez le pays 4 du Groupe 2"
-            android:singleLine="true"
-            android:textAlignment="center" />
+            android:hint="Ecrire ici"
+            android:textColor="#EC0606"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnSaveG2"
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="5dp"
-            android:hint="Validez Groupe 2"
-            android:layout_gravity="center" />
-
-
-        <EditText
-            android:id="@+id/groupNameGroupThree"
-            android:layout_width="match_parent"
-            android:textAlignment="center"
-            android:textSize="10sp"
+            android:id="@+id/btnValidGroupName"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Titre du Groupe 3"
-            android:singleLine="true"/>
-
-        <EditText
-            android:id="@+id/country1G3"
-            android:textSize="10sp"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 1 du Groupe 3"
-            android:singleLine="true"
-            android:layout_marginTop="2dp"/>
-
-        <EditText
-            android:id="@+id/country2G3"
-            android:textSize="10sp"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 2 du Groupe 3"
-            android:layout_marginTop="2dp" />
-
-        <EditText
-            android:id="@+id/country3G3"
-            android:textSize="10sp"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 3 du Groupe 3"
-            android:layout_marginTop="2dp" />
-
-        <EditText
-            android:id="@+id/country4G3"
-            android:textSize="10sp"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 4 du Groupe "
-            android:layout_marginTop="2dp"/>
-
-        <Button
-            android:id="@+id/btnSaveG3"
-            android:singleLine="true"
             android:layout_gravity="center"
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:hint="Validez Groupe 3"
-            android:layout_marginTop="2dp" />
+            android:layout_marginTop="30dp"
+            android:text="save" />
+    </LinearLayout>
 
 
-        <EditText
-            android:id="@+id/groupNameGroupFour"
-            android:layout_width="match_parent"
-            android:textAlignment="center"
-            android:textSize="10sp"
-            android:layout_marginTop="2dp"
-            android:layout_height="wrap_content"
-            android:hint="Titre du Groupe 4"
-            android:singleLine="true"/>
 
-        <EditText
-            android:id="@+id/country1G4"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:textSize="10sp"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 1 du Groupe 4"
-            android:singleLine="true"
-            android:layout_marginTop="2dp"/>
-
-        <EditText
-            android:id="@+id/counrty2GroupFour"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 2"
-            android:layout_marginTop="60dp" />
-
-        <EditText
-            android:id="@+id/counrty3GroupFour"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 3"
-            android:layout_marginTop="90dp" />
-
-        <EditText
-            android:id="@+id/counrtyGroupFour4"
-            android:layout_width="match_parent"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:layout_height="wrap_content"
-            android:hint="Saisissez le pays 4"
-            android:layout_marginTop="120dp"/>
-
-        <Button
-            android:id="@+id/btnValiderGroupFour"
-            android:singleLine="true"
-            android:textAlignment="center"
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="Sauvegarder"
-            android:layout_marginTop="160dp"
-            android:layout_marginBottom="5dp"/>
-
-        <Button
-            android:id="@+id/btnClose"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fermer"/>-->
-
-</LinearLayout>
