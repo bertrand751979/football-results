@@ -5,10 +5,10 @@ import java.io.Serializable;
 public class Score implements Serializable {
     private String teamHome;
     private String teamAway;
-    private int scoreTeamHome;
-    private int scoreTeamAway;
+    private String scoreTeamHome;
+    private String scoreTeamAway;
 
-    public Score(String teamHome, String teamAway, int scoreTeamHome, int scoreTeamAway) {
+    public Score(String teamHome, String teamAway, String scoreTeamHome, String scoreTeamAway) {
         this.teamHome = teamHome;
         this.teamAway = teamAway;
         this.scoreTeamHome = scoreTeamHome;
@@ -16,6 +16,7 @@ public class Score implements Serializable {
     }
 
     public Score(){}
+
     public String getTeamHome() {
         return teamHome;
     }
@@ -32,19 +33,19 @@ public class Score implements Serializable {
         this.teamAway = teamAway;
     }
 
-    public int getScoreTeamHome() {
+    public String getScoreTeamHome() {
         return scoreTeamHome;
     }
 
-    public void setScoreTeamHome(int scoreTeamHome) {
+    public void setScoreTeamHome(String scoreTeamHome) {
         this.scoreTeamHome = scoreTeamHome;
     }
 
-    public int getScoreTeamAway() {
+    public String getScoreTeamAway() {
         return scoreTeamAway;
     }
 
-    public void setScoreTeamAway(int scoreTeamAway) {
+    public void setScoreTeamAway(String scoreTeamAway) {
         this.scoreTeamAway = scoreTeamAway;
     }
 }

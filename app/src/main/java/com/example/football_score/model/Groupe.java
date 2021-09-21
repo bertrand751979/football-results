@@ -5,6 +5,7 @@ import java.io.Serializable;
 public class Groupe implements Serializable {
     private String nameOfGroup;
 
+
     public Groupe(String nameOfGroup) {
         this.nameOfGroup = nameOfGroup;
     }

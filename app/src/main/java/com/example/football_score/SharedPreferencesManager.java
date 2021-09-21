@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import com.example.football_score.model.CompositionGroupe;
 import com.example.football_score.model.Country;
 import com.example.football_score.model.Groupe;
+import com.example.football_score.model.Score;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
@@ -65,11 +66,29 @@ public class SharedPreferencesManager {
             save(listKey,booksAsString);
         }
 
-        public void saveCompositionGroup(List<CompositionGroupe> books, String listKey) {
+
+    public void saveScore(List<Score> books, String listKey) {
+        Gson gson = new Gson();
+        //gson.tojson qui transforme la liste en chaine de caractere
+        String booksAsString = gson.toJson(books);
+        save(listKey,booksAsString);
+    }
+    public List<Score> getScore(String listKey){
+        List<Score> booksList = new ArrayList<>();
+        Gson gson = new Gson();
+        Score[] books = gson.fromJson(get(listKey), Score[].class);
+        if (books != null){
+            booksList = Arrays.asList(gson.fromJson(get(listKey), Score[].class));
+        }
+        return  booksList;
+    }
+    
+        public List<CompositionGroupe> saveCompositionGroup(List<CompositionGroupe> books, String listKey) {
             Gson gson = new Gson();
             //gson.tojson qui transforme la liste en chaine de caractere
             String booksAsString = gson.toJson(books);
             save(listKey,booksAsString);
+            return books;
         }
 
         public List<Country> getCountry(String listKey){

@@ -2,6 +2,7 @@ package com.example.football_score.activity;
 
 import static com.example.football_score.activity.MainActivity.MY_COUNTRY_KEY;
 import static com.example.football_score.activity.MainActivity.MY_GROUP_KEY;
+import static com.example.football_score.activity.MainActivity.MY_SCORE_KEY;
 
 import android.os.Bundle;
 import android.view.View;
@@ -17,7 +18,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.football_score.R;
+import com.example.football_score.Repository;
 import com.example.football_score.SharedPreferencesManager;
+import com.example.football_score.fragment.EditTeamScoreFragment;
 import com.example.football_score.model.Country;
 import com.example.football_score.model.Groupe;
 
@@ -28,6 +31,7 @@ public class InscriptionActivity extends AppCompatActivity {
     public static ArrayList<Country> myCountryList=new ArrayList<>();
     private Button btnValidCountry;
     private EditText teamNameEdit;
+
     public static ArrayList<Groupe> myGroupeList=new ArrayList<>();
     private Button btnValidGroupe;
     private EditText editGroupe;
@@ -56,29 +60,11 @@ public class InscriptionActivity extends AppCompatActivity {
     }//oncreate
 
     private void addTeam(){
-        if(teamNameEdit.getText().toString().equalsIgnoreCase("")){
-            Toast.makeText(InscriptionActivity.this,"Veuillez saisir un nom d'equipe",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        Country country= new Country();
-        country.setCountryName(teamNameEdit.getText().toString());
-        myCountryList.add(country);
-        SharedPreferencesManager.getInstance(this).saveCountry(myCountryList,MY_COUNTRY_KEY);
-        Toast.makeText(InscriptionActivity.this,"La taille est du groupe 1 est: "+myCountryList.size(),Toast.LENGTH_SHORT).show();
+        Repository.getInstance().teamPreference(this,teamNameEdit.getText().toString());
     }
 
     private void addGroupe(){
-        if(editGroupe.getText().toString().equalsIgnoreCase("")){
-            Toast.makeText(InscriptionActivity.this,"Veuillez saisir un nom de Groupe",Toast.LENGTH_SHORT).show();
-            return;
-        }
-        Groupe groupe= new Groupe();
-        groupe.setNameOfGroup(editGroupe.getText().toString());
-        myGroupeList.add(groupe);
-        SharedPreferencesManager.getInstance(this).saveGroupe(myGroupeList,MY_GROUP_KEY);
-        Toast.makeText(InscriptionActivity.this,"La taille est du groupe 1 est: "+myGroupeList.size(),Toast.LENGTH_SHORT).show();
-        Toast.makeText(InscriptionActivity.this,"Le nom est: "+editGroupe.getText().toString(),Toast.LENGTH_SHORT).show();
-
+        Repository.getInstance().groupePreference(this,editGroupe.getText().toString());
     }
 
 

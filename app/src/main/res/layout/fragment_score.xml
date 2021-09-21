@@ -5,7 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="horizontal">
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION SCORE"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"/>
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,23 +27,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
         <Spinner
             android:id="@+id/spinnerTeamHome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp">
+            android:layout_marginLeft="10dp">
 
         </Spinner>
-
         <EditText
             android:id="@+id/scoreHome"
-            android:layout_marginLeft="60dp"
+            android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:hint="0"
-            android:textColor="@color/black"/>
+            android:textColor="#9C1241"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -42,25 +52,32 @@
             android:textSize="16sp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:layout_marginLeft="65dp"/>
+            android:layout_marginLeft="20dp"/>
 
             <EditText
                 android:id="@+id/scoreAway"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:hint="0"
-                android:textColor="@color/black"/>
+                android:textColor="#9C1241"/>
             <Spinner
                 android:id="@+id/spinnerTeamAway"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp">
+                android:layout_marginLeft="20dp">
             </Spinner>
-
         </LinearLayout>
+
     </com.google.android.material.card.MaterialCardView>
+    <Button
+        android:id="@+id/btnValidScore"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validez Score"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

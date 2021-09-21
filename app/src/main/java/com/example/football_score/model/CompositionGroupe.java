@@ -56,4 +56,15 @@ public class CompositionGroupe {
     public void setTeamFour(String teamFour) {
         this.teamFour = teamFour;
     }
+
+    @Override
+    public String toString() {
+        return "CompositionGroupe{" +
+                "groupeName='" + groupeName + '\'' +
+                ", teamOne='" + teamOne + '\'' +
+                ", teamTwo='" + teamTwo + '\'' +
+                ", teamThree='" + teamThree + '\'' +
+                ", teamFour='" + teamFour + '\'' +
+                '}';
+    }
 }
